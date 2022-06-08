@@ -137,21 +137,18 @@ body {
   color: var(--accent-color);
   display: flex;
 }
-.mail-logo::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/mail-header.svg);
-  background-size: contain;
-  content: '';
+.mail-logo,
+.tel-logo {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
-.tel-logo::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/tel-header.svg);
-  background-size: contain;
-  content: '';
-  margin-right: 10px;
+.mail-logo:hover,
+.mail-logo:focus {
+  fill: var(--accent-color);
+}
+.tel-logo:hover,
+.tel-logo:focus {
+  fill: var(--accent-color);
 }
 /* Hero */
 .section {
@@ -214,7 +211,7 @@ body {
   display: block;
   content: '';
   height: 120px;
-  background-size: 25px 100px 25 100px;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-button-color);
@@ -334,9 +331,8 @@ body {
   --card-item: 6;
 }
 .regular-customers {
-  width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+
   border-radius: 4px;
 }
 .regular-customers:hover,
@@ -351,6 +347,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
 }
 .clients-cpmany-icon {
   fill: #afb1b8;
@@ -381,6 +378,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-white);
+  margin-bottom: 20px;
 }
 .container .join {
   display: flex;
@@ -426,6 +424,13 @@ body {
 .footer-soc-link:hover .time-soc-icon,
 .footer-soc-link:focus .time-soc-icon {
   fill: var(--button-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-item:not(:last-child) {
+  margin-right: 70px;
 }
 /* section button */
 .section-project {
