@@ -234,6 +234,7 @@ body {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
+
 /* Section process */
 .section-worck {
   padding-top: 0px;
@@ -477,10 +478,11 @@ body {
 .layouts-item {
   background-color: var(--button-color);
 }
-.layouts-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.layouts-link {
+  display: flex;
+  flex-direction: column;
 }
+.layouts-link:hover,
 .layouts-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
